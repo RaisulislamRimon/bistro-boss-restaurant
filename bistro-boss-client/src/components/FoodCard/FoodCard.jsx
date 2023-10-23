@@ -3,16 +3,14 @@ const FoodCard = ({ item }) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
-        <img
-          src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
-        />
+        <img src={image} alt={name} />
       </figure>
+      <p className="bg-slate-700 text-white absolute right-0 mr-4 mt-4 px-4 rounded-md">${price}</p>
       <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="card-title justify-center">{name}</h2>
+        <p className="text-justify">{recipe}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary">Add to cart</button>
         </div>
       </div>
     </div>
